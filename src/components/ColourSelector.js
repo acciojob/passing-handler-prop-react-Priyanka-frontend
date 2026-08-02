@@ -2,9 +2,9 @@ import React from 'react';
 
 const ColourSelector = (props) => {
   const { config, selectNextBackground } = props
-  const {  background, classname, label } = config;
+  const {  background, classname, label, key } = config;
   return (
-    <button className={`color-btn ${classname}`} onClick={() => selectNextBackground({background: background})}>
+    <button className={`color-btn ${classname}`} data-testid={key} onClick={() => selectNextBackground({background: background})}>
       {label}
     </button>
   )
