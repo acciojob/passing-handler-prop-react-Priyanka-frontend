@@ -2,17 +2,32 @@
     width: 250px;
     height: 250px;
     margin: 20px;
-    border: 1px white dotted;
+    border: 2px solid #555;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#master{
+#master {
+    border: 2px ridge #555;
     border-radius: 5px;
-    border: 2px white ridge;
     width: 100%;
 }
 
-.subheading{
-    color: white;
+#children-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.subheading {
     text-align: center;
+    color: #fff;
 }
